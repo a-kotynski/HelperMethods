@@ -12,6 +12,7 @@ namespace HelperMethods
         {
             Console.WriteLine("The Name Game");
 
+            /*
             Console.Write("What's your first name?");
             string firstName = Console.ReadLine();
 
@@ -52,7 +53,21 @@ namespace HelperMethods
             }
 
             Console.WriteLine("Results: " + result);
+            */
+            ReverseString();
+
             Console.ReadLine();
+
+        }
+        private static void ReverseString()
+        {
+            string message = "Hello World!";
+            char[] messageArray = message.ToCharArray();
+            Array.Reverse(messageArray);
+            foreach (char item in messageArray)
+            {
+                Console.Write(item);
+            }
 
         }
     }
